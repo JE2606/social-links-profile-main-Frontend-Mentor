@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter';
+}
+main{
+    width: 100vw;
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+section{
+    max-width: 600px;
+    background-color: hsl(0, 0%, 12%);
+    padding: 2em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+img{
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5em;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    text-wrap: balance;
+    margin-bottom: .3em;
+}
+h4{
+    text-wrap: balance;
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    margin-bottom: 2em;
+}
+p{
+    text-wrap: pretty;
+    color: hsla(0, 0%, 100%, 0.775);
+    margin-bottom: 1.5em;
+    padding: 0 2.5em 0 2.5em;
+}
+div{
+    display: grid;
+    width: 90%;
+    text-align: center;
+}
+a{
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 600;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+
+    &:hover{
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 12%);
+        font-weight: 800;
+    }
+}
+
+@media (max-width:490px) {
+    section{
+        width: 300px;
+        padding: 1em;
+    }
+    p{
+        font-size: 12px;
+        padding: 0 1em 0 1em;
+    }
+    a{
+        padding: 12px;
+    }
+    
+}
